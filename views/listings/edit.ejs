@@ -1,0 +1,123 @@
+<% layout("/layout/boilerplate") %>
+<script>
+  const mapToken = '<%= mapToken %>';
+  const coordinates = <%- JSON.stringify(coordinates) %>;
+  const listingTitle = '<%= listingTitle %>';
+</script>
+
+<div class="row">
+  <div class="col-8 offset-2">
+    <br />
+    <h3>Edit your Listing</h3>
+    <br />
+    <form
+      method="POST"
+      action="/listings/<%=listing._id %>?_method=PUT"
+      novalidate
+      class="needs-validation"
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          name="listing[title]"
+          value="<%=listing.title %>"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Please enter a title.</div>
+      </div>
+      <br />
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" class="form-control" required>
+<%=listing.description %></textarea
+        >
+        <div class="invalid-feedback">Please enter a description.</div>
+      </div>
+      
+      <br />
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label for="image" class="form-label">Upload Listing Image</label>
+          <input
+            name="listing[image]"
+            placeholder="Enter Image URL/Link"
+            type="file"
+            class="form-control"
+          />
+          <div class="invalid-feedback">Please enter a valid image URL.</div>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="category" class="form-label">Category</label>
+          <select name="listing[category]" id="category" class="form-select" required>
+            <option value="" disabled>Select a Category</option>
+            <option value="Trending" <%= listing.category === 'Trending' ? 'selected' : '' %>>Trending</option>
+            <option value="Rooms" <%= listing.category === 'Rooms' ? 'selected' : '' %>>Rooms</option>
+            <option value="Iconic Cities" <%= listing.category === 'Iconic Cities' ? 'selected' : '' %>>Iconic Cities</option>
+            <option value="Luxury Hotels" <%= listing.category === 'Luxury Hotels' ? 'selected' : '' %>>Luxury Hotels</option>
+            <option value="Mountain" <%= listing.category === 'Mountain' ? 'selected' : '' %>>Mountain</option>
+            <option value="Amazing Pools" <%= listing.category === 'Amazing Pools' ? 'selected' : '' %>>Amazing Pools</option>
+            <option value="Chill" <%= listing.category === 'Chill' ? 'selected' : '' %>>Chill</option>
+            <option value="Lakefront" <%= listing.category === 'Lakefront' ? 'selected' : '' %>>Lakefront</option>
+            <option value="Worship" <%= listing.category === 'Worship' ? 'selected' : '' %>>Worship</option>
+            <option value="Treehouse" <%= listing.category === 'Treehouse' ? 'selected' : '' %>>Treehouse</option>
+            <option value="Camp" <%= listing.category === 'Camp' ? 'selected' : '' %>>Camp</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="mb-3 col-md-6">
+          <label for="price" class="form-label">Price</label>
+          <input
+            name="listing[price]"
+            value="<%=listing.price %>"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please enter a valid price.</div>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="country" class="form-label">Country</label>
+          <input
+            name="listing[country]"
+            value="<%=listing.country %>"
+            type="text"
+            class="form-control"
+            id="country-input"
+            required
+          />
+          <div class="invalid-feedback">Please enter a country.</div>
+        </div>
+      </div>
+      <br />
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input
+          name="listing[location]"
+          value="<%=listing.location %>"
+          type="text"
+          class="form-control"
+          id="location-input"
+          required
+        />
+        <div class="invalid-feedback">Please enter a location.</div>
+      </div>
+      <br>
+      
+      <div class="mb-3">
+        <label class="form-label">Location Preview</label>
+        <div id="map" style="width: 100%; height: 400px; border-radius: 8px;"></div>
+      </div>
+      
+      <br />
+      <button class="btn btn-dark mb-3 add-btn">Edit</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/map.js"></script>

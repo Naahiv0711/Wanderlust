@@ -1,0 +1,17 @@
+.listing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.listing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.listing-card img {
+  transition: transform 0.3s ease;
+}
+
+.listing-card:hover img {
+  transform: scale(1.05);
+}

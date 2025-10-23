@@ -1,0 +1,152 @@
+.navbar {
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 39.9%,
+    rgb(248, 248, 248) 100%
+  );
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.navbar-brand {
+  padding: 0.5rem;
+  margin-right: 0;
+  color: #ff385c;
+  font-size: 1.5rem;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-link {
+  color: #222222 !important;
+  text-decoration: none;
+  padding: 8px 12px !important;
+  border-radius: 25px;
+  margin: 0;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background-color: #f7f7f7;
+}
+
+.navbar-toggler {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  display: none;
+  width: 100%;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
+
+.mobile-menu {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.mobile-menu .nav-link {
+  width: 100%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-left .nav-link {
+    display: none;
+  }
+
+  .navbar .container-fluid {
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand {
+    padding: 0.25rem;
+    font-size: 1.75rem;
+  }
+
+  .nav-center {
+    position: static;
+    transform: none;
+    flex: 1;
+    max-width: calc(100% - 140px);
+  }
+
+  .navbar-toggler {
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .nav-right {
+    display: none !important;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-link {
+    padding: 6px 10px !important;
+    font-size: 0.9rem;
+  }
+}
