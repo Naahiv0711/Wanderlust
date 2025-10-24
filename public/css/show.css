@@ -1,0 +1,231 @@
+@media (max-width: 430px) {
+  .show-page .col-8.offset-3,
+  .show-page .col-6.offset-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    padding: 0 15px;
+  }
+
+  .show-page h3 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .show-card {
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .show-img {
+    border-radius: 12px 12px 0 0;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .card-body .row .col-md-4,
+  .card-body .row .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card-body .row .col-4,
+  .card-body .row .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .btns + .col-8.offset-3 {
+    margin-top: 2rem !important;
+  }
+
+  .btns .col-1.offset-3,
+  .btns a.add-btn {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+
+  .btns form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .btns form button {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+
+  .btns .offset-5 {
+    margin-left: 0 !important;
+  }
+
+  .show-page .col-8.offset-3.mb-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    padding: 0 15px;
+  }
+
+  .needs-validation {
+    padding: 0;
+  }
+
+  .needs-validation .form-label {
+    font-size: 1rem;
+  }
+
+  .needs-validation textarea {
+    font-size: 0.9rem;
+  }
+
+  .needs-validation .add-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .starability-slot {
+    font-size: 1rem;
+  }
+
+  .reviews-section {
+    padding: 0;
+  }
+
+  .reviews-heading {
+    font-size: 1.3rem;
+    padding: 0 5px;
+  }
+
+  .review-count {
+    font-size: 0.9rem;
+  }
+
+  .reviews-section .col-12.col-md-6.col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .review-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .reviewer-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .btn-delete {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+
+  .btn-delete:hover {
+    color: #a71d2a;
+  }
+
+  .no-reviews {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #999;
+  }
+
+  .no-reviews i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  #map {
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  hr {
+    margin: 1.5rem 0;
+  }
+
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .mt-3 {
+    margin-top: 1rem !important;
+  }
+}

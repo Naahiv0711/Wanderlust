@@ -1,0 +1,40 @@
+@media (max-width: 430px) {
+  .login-page {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+  }
+  .signup-page {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+  }
+  .heading {
+    padding-top: 1rem;
+    font-weight: bold;
+  }
+  .inputs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  .req-flash {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+  }
+}
+.req-flash {
+  margin-top: 10px !important;
+}
+.inputs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.submit {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
