@@ -1,34 +1,43 @@
 # 🌍 Wanderlust
 
-Wanderlust is a full-stack web application inspired by Airbnb, built using the MERN stack and structured with the MVC architecture. It allows users to explore and manage property listings with secure authentication, role-based access control, and location-based features.
+Wanderlust is a full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS, following the MVC architecture. The platform allows users to explore, create, and manage property listings with secure authentication and location-based features.
 
 ## ✨ Features
 
-- Secure authentication and RBAC using Passport.js
-
-- Full CRUD operations for property listings and reviews
-
-- Search and filter functionality for listings
-
-- Maps API integration for location-based visualization
-
-- Cloudinary integration for image upload and storage
-
-- Fully responsive design for desktop and mobile devices
+- User authentication and authorization using Passport.js
+- Full CRUD functionality for property listings and reviews
+- Search and filtering of listings
+- Interactive maps for location-based visualization
+- Image upload and storage using Cloudinary
+- Flash messages and form validations
+- Fully responsive UI for desktop and mobile devices
 
 ## 🛠️ Tech Stack
 
-- Frontend: HTML5, CSS3, JavaScript, EJS
+**Frontend**
+- HTML5, CSS3, JavaScript
+- EJS (Server-side rendering)
 
-- Backend: Node.js, Express.js
+**Backend**
+- Node.js
+- Express.js
 
-- Database: MongoDB
+**Database**
+- MongoDB Atlas
 
-- Architecture: MVC, REST APIs
+**Architecture**
+- MVC
+- RESTful APIs
 
-- Tools & Services: Passport.js, Cloudinary, Maps API, Render
+**Tools & Services**
+- Passport.js (Authentication)
+- Cloudinary (Image storage)
+- Mapbox API (Maps & Geocoding)
+- PM2 (Process management)
+- AWS EC2 (Deployment)
 
 ## 🚀 Live Demo
-http://13.53.238.115:3000
 
-Deployed on AWS EC2 using Node.js, Express, PM2, and MongoDB Atlas.
+👉 **http://13.53.238.115:3000**
+
+The application is deployed on an AWS EC2 instance and managed using PM2. Environment variables are securely handled, and the database is hosted on MongoDB Atlas.
