@@ -27,3 +27,8 @@ Wanderlust is a full-stack web application inspired by Airbnb, built using the M
 - Architecture: MVC, REST APIs
 
 - Tools & Services: Passport.js, Cloudinary, Maps API, Render
+
+## 🚀 Live Demo
+http://13.53.238.115:3000
+
+Deployed on AWS EC2 using Node.js, Express, PM2, and MongoDB Atlas.
