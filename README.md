@@ -35,9 +35,3 @@ Wanderlust is a full-stack web application inspired by Airbnb, built using Node.
 - Mapbox API (Maps & Geocoding)
 - PM2 (Process management)
 - AWS EC2 (Deployment)
-
-## 🚀 Live Demo
-
-👉 **http://13.53.238.115:3000**
-
-The application is deployed on an AWS EC2 instance and managed using PM2. Environment variables are securely handled, and the database is hosted on MongoDB Atlas.
